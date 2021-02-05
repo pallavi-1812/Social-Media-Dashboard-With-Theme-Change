@@ -5,7 +5,7 @@ import OverviewCard from './components/overviewCard';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Header />
       <Card />
       <Heading />

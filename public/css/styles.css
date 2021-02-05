@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +7,219 @@
 
 body {
   font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background-color: #1e202a;
+}
+
+.container {
+  margin: 0 6rem;
+}
+
+.heading {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading .mainHead {
+  margin-left: 37px;
+}
+
+.heading .fHead {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.heading .secHead {
+  margin: 3px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.heading .toggle {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.heading .darkHead {
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+.allCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 45px;
+}
+
+.allCards .card {
+  width: 21%;
+  height: 200px;
+  background-color: #252a41;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.allCards .card .tag {
+  display: flex;
+  align-items: center;
+}
+
+.allCards .card .tag img {
+  margin-right: 10px;
+}
+
+.allCards .card .tag p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.allCards .card .follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.allCards .card .follow .followNum {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.allCards .card .follow .numName {
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+
+.allCards .card .dif {
+  display: flex;
+  font-weight: 600;
+}
+
+.allCards .card .dif img {
+  padding: 4px;
+}
+
+.allCards .card .dif.decrease {
+  color: #dc414c;
+}
+
+.allCards .card:hover {
+  cursor: pointer;
+  background-color: #303755;
+}
+
+h1 {
+  color: white;
+}
+
+.overviewHead {
+  margin: 35px 0 25px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.secHead {
+  color: #8b97c6;
+}
+
+.darkHead {
+  color: white;
+}
+
+.card .tag {
+  color: #8b97c6;
+}
+
+.card .followNum {
+  color: white;
+}
+
+.card .numName {
+  color: #8b97c6;
+}
+
+.card .dif {
+  color: #1db489;
+}
+
+.overall {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+.overall .overview-cards {
+  width: 21%;
+  height: 120px;
+  background-color: #252a41;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.overall .overview-cards .fRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.overall .overview-cards .fRow p {
+  color: #8b97c6;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.overall .overview-cards .fRow span {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.overall .overview-cards .sRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.overall .overview-cards .sRow .num {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.overall .overview-cards .sRow .number {
+  display: flex;
+  font-weight: 600;
+  color: #1db489;
+  margin-right: 20px;
+}
+
+.overall .overview-cards .sRow .number img {
+  padding: 4px;
+}
+
+.overall .overview-cards .sRow .number.decrease {
+  color: #dc414c;
+}
+
+.overall .overview-cards:hover {
+  cursor: pointer;
+  background-color: #303755;
 }
 
 .switch {

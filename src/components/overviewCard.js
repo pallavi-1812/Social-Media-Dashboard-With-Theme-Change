@@ -9,108 +9,144 @@ import youtubeIcon from "./images/icon-youtube.svg";
 const OverviewCard = () => {
   return (
     <>
-      <div className="overview-cards">
-        <div>
-          <p>Page Views</p>
-          <img src={facebookIcon} alt="Facebook Icon" />
+      <div className="overall">
+        <div className="overview-cards">
+          <div className="fRow">
+            <p>Page Views</p>
+            <span>
+              <img src={facebookIcon} alt="Facebook Icon" />
+            </span>
+          </div>
+          <div className="sRow">
+            <p className="num">87</p>
+            <div className="number">
+              <span>
+                <img src={upIcon} alt="up Icon" />
+              </span>
+              <p>3%</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <p>87</p>
-          <span>
-            <img src={upIcon} alt="up Icon" />
-          </span>
-          3%
+        <div className="overview-cards">
+          <div className="fRow">
+            <p>Likes</p>
+            <span>
+              <img src={facebookIcon} alt="Facebook Icon" />
+            </span>
+          </div>
+          <div className="sRow">
+            <p className="num">52</p>
+            <div className="number decrease">
+              <span>
+                <img src={downIcon} alt="down Icon" />
+              </span>
+              <p>2%</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="overview-cards">
-        <div>
-          <p>Likes</p>
-          <img src={facebookIcon} alt="Facebook Icon" />
+        <div className="overview-cards">
+          <div className="fRow">
+            <p>Likes</p>
+            <span>
+              <img src={instagramIcon} alt="instagram Icon" />
+            </span>
+          </div>
+          <div className="sRow">
+            <p className="num">5462</p>
+            <div className="number">
+              <span>
+                <img src={upIcon} alt="up Icon" />
+              </span>
+              <p>2257%</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <p>52</p>
-          <span>
-            <img src={downIcon} alt="down Icon" />
-          </span>
-          2%
-        </div>
-      </div>
-      <div className="overview-cards">
-        <div>
-          <p>Likes</p>
-          <img src={instagramIcon} alt="instagram Icon" />
-        </div>
-        <div>
-          <p>5462</p>
-          <span>
-            <img src={upIcon} alt="up Icon" />
-          </span>
-          2257%
-        </div>
-      </div>
-      <div className="overview-cards">
-        <div>
-          <p>Profile Views</p>
-          <img src={instagramIcon} alt="instagram Icon" />
-        </div>
-        <div>
-          <p>52K</p>
-          <span>
-            <img src={upIcon} alt="up Icon" />
-          </span>
-          1375%
-        </div>
-      </div>
-      <div className="overview-cards">
-        <div>
-          <p>Retweets</p>
-          <img src={twitterIcon} alt="twitter Icon" />
-        </div>
-        <div>
-          <p>117</p>
-          <span>
-            <img src={upIcon} alt="up Icon" />
-          </span>
-          303%
-        </div>
-      </div>
-      <div className="overview-cards">
-        <div>
-          <p>Likes</p>
-          <img src={twitterIcon} alt="twitter Icon" />
-        </div>
-        <div>
-          <p>507</p>
-          <span>
-            <img src={upIcon} alt="up Icon" />
-          </span>
-          553%
+        <div className="overview-cards">
+          <div className="fRow">
+            <p>Profile Views</p>
+            <span>
+              <img src={instagramIcon} alt="instagram Icon" />
+            </span>
+          </div>
+          <div className="sRow">
+            <p className="num">52k</p>
+            <div className="number">
+              <span>
+                <img src={upIcon} alt="up Icon" />
+              </span>
+              <p>1375%</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="overview-cards">
-        <div>
-          <p>Likes</p>
-          <img src={youtubeIcon} alt="youtube Icon" />
+      <div className="overall">
+        <div className="overview-cards">
+          <div className="fRow">
+            <p>Retweets</p>
+            <span>
+              <img src={twitterIcon} alt="twitter Icon" />
+            </span>
+          </div>
+          <div className="sRow">
+            <p className="num">117</p>
+            <div className="number">
+              <span>
+                <img src={upIcon} alt="up Icon" />
+              </span>
+              <p>303%</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <p>107</p>
-          <span>
-            <img src={downIcon} alt="down Icon" />
-          </span>
-          19%
+        <div className="overview-cards">
+          <div className="fRow">
+            <p>Likes</p>
+            <span>
+              <img src={twitterIcon} alt="twitter Icon" />
+            </span>
+          </div>
+          <div className="sRow">
+            <p className="num">507</p>
+            <div className="number">
+              <span>
+                <img src={upIcon} alt="up Icon" />
+              </span>
+              <p>553%</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="overview-cards">
-        <div>
-          <p>Total Views</p>
-          <img src={youtubeIcon} alt="youtube Icon" />
+        <div className="overview-cards">
+          <div className="fRow">
+            <p>Likes</p>
+            <span>
+              <img src={youtubeIcon} alt="youtube Icon" />
+            </span>
+          </div>
+          <div className="sRow">
+            <p className="num">107</p>
+            <div className="number decrease">
+              <span>
+                <img src={downIcon} alt="down Icon" />
+              </span>
+              <p>19%</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <p>1407</p>
-          <span>
-            <img src={downIcon} alt="down Icon" />
-          </span>
-          12%
+        <div className="overview-cards">
+          <div className="fRow">
+            <p>Total Views</p>
+            <span>
+              <img src={youtubeIcon} alt="youtube Icon" />
+            </span>
+          </div>
+          <div className="sRow">
+            <p className="num">1407</p>
+            <div className="number decrease">
+              <span>
+                <img src={downIcon} alt="down Icon" />
+              </span>
+              <p>12%</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
