@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import ToggleContext from '../Context';
 import facebookIcon from "./images/icon-facebook.svg";
 import upIcon from "./images/icon-up.svg";
 import downIcon from "./images/icon-down.svg";
@@ -7,9 +8,12 @@ import instagramIcon from "./images/icon-instagram.svg";
 import youtubeIcon from "./images/icon-youtube.svg";
 
 const Card = () => {
+
+  const { checked } = useContext(ToggleContext);
+
   return (
     <div className="allCards">
-      <div className="card">
+      <div className={`card facebook ${checked ? "light" : ""}`}>
         <div className="tag">
           <span>
             <img src={facebookIcon} alt="Facebook Icon" />
@@ -27,7 +31,7 @@ const Card = () => {
           <p>12 Today</p>
         </div>
       </div>
-      <div className="card">
+      <div className={`card twitter ${checked ? "light" : ""}`}>
         <div className="tag">
           <span>
             <img src={twitterIcon} alt="twitter Icon" />
@@ -45,7 +49,7 @@ const Card = () => {
           <p>99 Today</p>
         </div>
       </div>
-      <div className="card">
+      <div className={`card insta ${checked ? "light" : ""}`}>
         <div className="tag">
           <span>
             <img src={instagramIcon} alt="instagram Icon" />
@@ -63,7 +67,7 @@ const Card = () => {
           <p>1099 Today</p>
         </div>
       </div>
-      <div className="card">
+      <div className={`card utube ${checked ? "light" : ""}`}>
         <div className="tag">
           <span>
             <img src={youtubeIcon} alt="youtube Icon" />

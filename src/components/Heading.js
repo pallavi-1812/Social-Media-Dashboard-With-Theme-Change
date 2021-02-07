@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import ToggleContext from '../Context';
 
 const Heading = () => {
-    return <div className="overviewHead"><p>Overview-Today</p></div>;
+
+    const { checked } = useContext(ToggleContext);
+
+    return <div className={`overviewHead ${checked ? "light" : ""}`}><p>Overview-Today</p></div>;
 }
 
 export default Heading;

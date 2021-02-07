@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import facebookIcon from "./images/icon-facebook.svg";
 import upIcon from "./images/icon-up.svg";
 import downIcon from "./images/icon-down.svg";
 import twitterIcon from "./images/icon-twitter.svg";
 import instagramIcon from "./images/icon-instagram.svg";
 import youtubeIcon from "./images/icon-youtube.svg";
+import ToggleContext from "../Context";
 
 const OverviewCard = () => {
+  const { checked } = useContext(ToggleContext);
+
   return (
     <>
       <div className="overall">
-        <div className="overview-cards">
+        <div className={`overview-cards ${checked ? "light" : ""}`}>
           <div className="fRow">
             <p>Page Views</p>
             <span>
@@ -27,7 +30,7 @@ const OverviewCard = () => {
             </div>
           </div>
         </div>
-        <div className="overview-cards">
+        <div className={`overview-cards ${checked ? "light" : ""}`}>
           <div className="fRow">
             <p>Likes</p>
             <span>
@@ -44,7 +47,7 @@ const OverviewCard = () => {
             </div>
           </div>
         </div>
-        <div className="overview-cards">
+        <div className={`overview-cards ${checked ? "light" : ""}`}>
           <div className="fRow">
             <p>Likes</p>
             <span>
@@ -61,7 +64,7 @@ const OverviewCard = () => {
             </div>
           </div>
         </div>
-        <div className="overview-cards">
+        <div className={`overview-cards ${checked ? "light" : ""}`}>
           <div className="fRow">
             <p>Profile Views</p>
             <span>
@@ -80,7 +83,7 @@ const OverviewCard = () => {
         </div>
       </div>
       <div className="overall">
-        <div className="overview-cards">
+        <div className={`overview-cards ${checked ? "light" : ""}`}>
           <div className="fRow">
             <p>Retweets</p>
             <span>
@@ -97,7 +100,7 @@ const OverviewCard = () => {
             </div>
           </div>
         </div>
-        <div className="overview-cards">
+        <div className={`overview-cards ${checked ? "light" : ""}`}>
           <div className="fRow">
             <p>Likes</p>
             <span>
@@ -114,7 +117,7 @@ const OverviewCard = () => {
             </div>
           </div>
         </div>
-        <div className="overview-cards">
+        <div className={`overview-cards ${checked ? "light" : ""}`}>
           <div className="fRow">
             <p>Likes</p>
             <span>
@@ -131,7 +134,7 @@ const OverviewCard = () => {
             </div>
           </div>
         </div>
-        <div className="overview-cards">
+        <div className={`overview-cards ${checked ? "light" : ""}`}>
           <div className="fRow">
             <p>Total Views</p>
             <span>

@@ -23,6 +23,22 @@ body {
   justify-content: space-between;
 }
 
+.heading.light .fHead {
+  color: #1e202a;
+}
+
+.heading.light .secHead {
+  color: #63687e;
+}
+
+.heading.light .switch .slider:hover {
+  background-image: linear-gradient(to right, #378fe6, #3eda82);
+}
+
+.heading.light .darkHead {
+  color: #63687e;
+}
+
 .heading .mainHead {
   margin-left: 37px;
 }
@@ -62,10 +78,53 @@ body {
   width: 21%;
   height: 200px;
   background-color: #252a41;
+  border-radius: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+.allCards .card.facebook {
+  border-top: 3.5px solid #198ff5;
+}
+
+.allCards .card.twitter {
+  border-top: 3.5px solid #1ca0f2;
+}
+
+.allCards .card.insta {
+  border-top: 10px solid #df4996;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 3.5px;
+  border-bottom-width: 0;
+  border-image: linear-gradient(to right, #fdc468, #df4996) 1 stretch;
+}
+
+.allCards .card.utube {
+  border-top: 3.5px solid #c4032a;
+}
+
+.allCards .card.light {
+  background-color: #f0f2fa;
+}
+
+.allCards .card.light .tag {
+  color: #63687e;
+}
+
+.allCards .card.light .followNum {
+  color: #1e202a;
+}
+
+.allCards .card.light .follow {
+  color: #63687e;
+}
+
+.allCards .card.light:hover {
+  cursor: pointer;
+  background-color: #e5e8f6;
 }
 
 .allCards .card .tag {
@@ -128,6 +187,10 @@ h1 {
   margin-left: 30px;
 }
 
+.overviewHead.light {
+  color: #63687e;
+}
+
 .secHead {
   color: #8b97c6;
 }
@@ -163,10 +226,28 @@ h1 {
   width: 21%;
   height: 120px;
   background-color: #252a41;
+  border-radius: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+.overall .overview-cards.light {
+  background-color: #f0f2fa;
+}
+
+.overall .overview-cards.light:hover {
+  cursor: pointer;
+  background-color: #e5e8f6;
+}
+
+.overall .overview-cards.light .fRow p {
+  color: #63687e;
+}
+
+.overall .overview-cards.light .sRow .num {
+  color: #1e202a;
 }
 
 .overall .overview-cards .fRow {
