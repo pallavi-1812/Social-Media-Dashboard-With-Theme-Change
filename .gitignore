@@ -24,3 +24,4 @@ yarn-error.log*
 
 styles.scss
 _config.scss
+_mobile.scss
